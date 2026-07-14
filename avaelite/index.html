@@ -3,61 +3,147 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Inscrição cancelada — AvaElite</title>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  .sora{font-family:'Sora',Arial,Helvetica,sans-serif;}
-  .title{margin:0;color:#1A1A1A;font-size:22px;font-weight:800;line-height:1.4;}
-  .body-p{color:#57534E;font-size:15px;line-height:1.85;margin:16px 0 0 0;}
-  .body-p strong{color:#1A1A1A;}
-  .footer-p{margin:0;color:#9CA3AF;font-size:12px;line-height:1.8;}
+  :root {
+    --bg: #FDF6EC;
+    --card-bg: #FFFFFF;
+    --card-border: #E8DDD0;
+    --accent: #FFD000;
+    --text-title: #1A1A1A;
+    --text-body: #57534E;
+    --text-footer: #9CA3AF;
+    --divider: #ECECEC;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    font-family: 'Sora', Arial, Helvetica, sans-serif;
+    padding: 32px 16px;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    display: block;
+    width: 140px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+  }
+
+  .card {
+    width: 100%;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .card-content {
+    padding: 64px 48px;
+    text-align: center;
+  }
+
+  .icon {
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 22px;
+    border-radius: 50%;
+    background: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #000000;
+  }
+
+  .title {
+    margin: 0;
+    color: var(--text-title);
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.4;
+  }
+
+  .body-text {
+    color: var(--text-body);
+    font-size: 15px;
+    line-height: 1.85;
+    margin: 16px 0 0;
+  }
+
+  .body-text strong {
+    color: var(--text-title);
+  }
+
+  .card-footer {
+    padding: 22px;
+    border-top: 1px solid var(--divider);
+    text-align: center;
+  }
+
+  .card-footer p {
+    margin: 0;
+    color: var(--text-footer);
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .card-footer strong {
+    color: #374151;
+  }
+
+  @media (max-width: 600px) {
+    .card-content {
+      padding: 40px 24px;
+    }
+    .title {
+      font-size: 20px;
+    }
+    .body-text {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+  }
 </style>
 </head>
+<body>
+  <main class="page">
+    <img
+      class="logo"
+      src="https://app.avaelite.com.br/assets/logo-DkYLXydu.png"
+      alt="AvaElite">
 
-<body style="margin:0;padding:0;background:#ffffff;">
+    <section class="card">
+      <div class="card-content">
+        <div class="icon" aria-hidden="true">✓</div>
+        <h1 class="title">Sua inscrição foi cancelada.</h1>
+        <p class="body-text">Você não vai mais receber e-mails do AvaElite a partir de agora.</p>
+        <p class="body-text">Se isso foi um engano ou você mudar de ideia, é só se inscrever novamente quando quiser.</p>
+      </div>
 
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#FDF6EC;">
-
-    <!-- Logo -->
-    <tr>
-        <td align="center" style="padding:32px 0 20px 0;">
-            <img
-                src="https://app.avaelite.com.br/assets/logo-DkYLXydu.png"
-                alt="AvaElite"
-                width="140"
-                style="display:block;max-width:140px;width:100%;height:auto;border:0;">
-        </td>
-    </tr>
-
-    <tr>
-    <td align="center" style="padding:10px 0 30px;">
-    <table role="presentation" width="520" cellpadding="0" cellspacing="0" border="0" style="width:520px;max-width:520px;background:#FFFFFF;border:1px solid #E8DDD0;border-radius:20px;">
-
-        <tr>
-        <td class="sora" align="center" style="padding:52px 40px;">
-
-            <div style="width:52px;height:52px;border-radius:50%;background:#ffd000;margin:0 auto 22px auto;line-height:52px;text-align:center;font-size:22px;color:#000000;">✓</div>
-
-            <p class="title">Sua inscrição foi cancelada.</p>
-            <p class="body-p">Você não vai mais receber e-mails do AvaElite a partir de agora.</p>
-            <p class="body-p">Se isso foi um engano ou você mudar de ideia, é só se inscrever novamente quando quiser.</p>
-
-        </td>
-        </tr>
-
-        <tr>
-            <td align="center" style="background:#F3F4F6;padding:22px;border-radius:0 0 20px 20px;">
-                <p class="sora footer-p">
-                    <strong style="color:#374151;">AvaElite</strong> <br>· Software para coleta de dados de mercado e avaliação de imóveis.
-                </p>
-            </td>
-        </tr>
-
-    </table>
-    </td>
-    </tr>
-</table>
-
+      <footer class="card-footer">
+        <p><strong>AvaElite</strong> · Software para coleta de dados de mercado e avaliação de imóveis.</p>
+      </footer>
+    </section>
+  </main>
 </body>
 </html>
