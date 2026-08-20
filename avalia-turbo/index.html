@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inscrição cancelada - AvaliaTurbo</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Sora', sans-serif;
+    background-color: #E4F3F4;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  .logo-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+
+  .logo-wrap img {
+    height: 44px;
+    width: auto;
+  }
+
+  .card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(7, 18, 36, 0.08);
+    overflow: hidden;
+  }
+
+  .card-body {
+    padding: 56px 48px 44px;
+    text-align: center;
+  }
+
+  .check-circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #118195;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 28px;
+  }
+
+  .check-circle svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #071224;
+    margin-bottom: 20px;
+    letter-spacing: -0.3px;
+  }
+
+  p {
+    font-size: 15px;
+    color: #4A5A68;
+    line-height: 1.6;
+    margin-bottom: 14px;
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .card-footer {
+    background: #E4F3F4;
+    padding: 18px 48px;
+    text-align: center;
+    border-top: 1px solid #d3e9ea;
+  }
+
+  .card-footer span {
+    font-size: 12.5px;
+    color: #4A5A68;
+  }
+
+  .card-footer strong {
+    color: #071224;
+    font-weight: 700;
+  }
+
+  @media (max-width: 480px) {
+    .card-body {
+      padding: 44px 28px 32px;
+    }
+    .card-footer {
+      padding: 16px 28px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo-wrap">
+      <img src="https://avaliaturbo.com.br/assets/logo-azul.webp" alt="AvaliaTurbo">
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="check-circle">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 6L9 17L4 12" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h1>Sua inscrição foi cancelada.</h1>
+        <p>Você não vai mais receber e-mails do AvaliaTurbo a partir de agora.</p>
+        <p>Se isso foi um engano ou você mudar de ideia, é só se inscrever novamente quando quiser.</p>
+      </div>
+      <div class="card-footer">
+        <span><strong>AvaliaTurbo</strong> · Avalie mais. Trabalhe menos.</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
